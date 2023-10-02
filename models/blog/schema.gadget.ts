@@ -9,6 +9,7 @@ export const schema: GadgetModel = {
     createdAt: { type: "DateTime", validations: [{ type: "required" }], dataKey: "mf-sys-ofO4RD-createdAt" },
     description: { type: "String", validations: [{ type: "required" }], dataKey: "mf-Ms3dOA" },
     id: { type: "ID", validations: [{ type: "required" }, { type: "unique" }], dataKey: "mf-sys-bPCqjx-id" },
+    state: { type: "Enum", default: "published", options: ["draft", "published"], dataKey: "mf-nMx5pI" },
     title: { type: "String", validations: [{ type: "required" }], dataKey: "mf-aYk9ur" },
     updatedAt: { type: "DateTime", validations: [{ type: "required" }], dataKey: "mf-sys-wrKE6s-updatedAt" },
   },
