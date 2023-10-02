@@ -7,9 +7,11 @@ export const schema: GadgetModel = {
   dataKey: "dm-4TduEG",
   apiIdentifier: "blog",
   fields: {
+    comments: { dataKey: "mf-CwHCmJ", type: "HasMany", relatedModelKey: "dm-hDYEYG", inverseFieldKey: "mf-O8UN3x" },
     createdAt: { dataKey: "mf-sys-ofO4RD-createdAt", type: "DateTime", validations: [{ type: "required" }] },
     description: { dataKey: "mf-Ms3dOA", type: "String", validations: [{ type: "required" }] },
     id: { dataKey: "mf-sys-bPCqjx-id", type: "ID", validations: [{ type: "required" }, { type: "unique" }] },
+    sharingEnabled: { dataKey: "mf-KdmfmQ", type: "Boolean", default: true },
     title: { dataKey: "mf-aYk9ur", type: "String", validations: [{ type: "required" }] },
     updatedAt: { dataKey: "mf-sys-wrKE6s-updatedAt", type: "DateTime", validations: [{ type: "required" }] },
   },
