@@ -5,5 +5,5 @@ import type { GadgetAction } from "gadget-server";
 export const action: GadgetAction = {
   type: "gadget/action/v1",
   triggers: [{ type: "graphql_api" }],
-  permissions: { "signed-in": { filter: "user/filters/tenant.gelly" }, "system-admin": true },
+  permissions: { "signed-in": { filter: "user/filters/tenant.gelly" } },
 };

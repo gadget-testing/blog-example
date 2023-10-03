@@ -5,5 +5,5 @@ import type { GadgetAction } from "gadget-server";
 export const action: GadgetAction = {
   type: "gadget/action/v1",
   triggers: [{ type: "google_oauth/signin" }],
-  permissions: { "system-admin": true },
+  permissions: { },
 };

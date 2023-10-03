@@ -6,7 +6,6 @@ export const accessControl: GadgetAccessControl = {
   type: "gadget/access-control/v1",
   roles: {
     "signed-in": { defaultRead: true, defaultAction: true },
-    "system-admin": { defaultRead: true, defaultAction: true },
     unauthenticated: {},
   },
 };
