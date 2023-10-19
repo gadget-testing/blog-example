@@ -7,7 +7,7 @@ export const schema: GadgetModel = {
     createdAt: { type: "DateTime", validations: [{ type: "required" }] },
     description: { type: "String", validations: [{ type: "required" }] },
     id: { type: "ID", validations: [{ type: "required" }, { type: "unique" }] },
-    headline: { type: "String", validations: [{ type: "required" }] },
+    name: { type: "String", validations: [{ type: "required" }] },
     updatedAt: { type: "DateTime", validations: [{ type: "required" }] },
   },
 };
