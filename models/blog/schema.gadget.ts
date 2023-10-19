@@ -8,6 +8,7 @@ export const schema: GadgetModel = {
     description: { type: "String", validations: [{ type: "required" }] },
     id: { type: "ID", validations: [{ type: "required" }, { type: "unique" }] },
     title: { type: "String", validations: [{ type: "required" }] },
+    slug: { type: "String", validations: [] },
     updatedAt: { type: "DateTime", validations: [{ type: "required" }] },
   },
 };
